@@ -1,0 +1,78 @@
+* {
+  /*no olviadr poner padding y margin en 0*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+/**scroll personalizado*/
+/*?primero se accede a la barra y se le da el tamaño entre otras propiedades*/
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+/*?despues de edita la barra que baja y sube con propiedades X*/
+body::-webkit-scrollbar-thumb {
+  background: #95afc0;
+  border-radius: 5px;
+}
+
+/*?header (barra de navegacion)*/
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  transition: all 0.5s ease;
+}
+
+.nav.active {
+  background: rgba(9, 1, 48, 0.986);
+  padding: 10px;
+  z-index: 10;
+}
+
+.nav.active .logo,
+.nav.active a {
+  color: aliceblue;
+}
+
+.nav.active a:hover {
+  background: aliceblue;
+  color: black;
+}
+.logo {
+  font-size: 25px;
+  color: black;
+  font-weight: 100;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  margin: 10px;
+}
+
+.menu li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+  padding: 5px 10px;
+  color: rgb(255, 250, 250);
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+}
