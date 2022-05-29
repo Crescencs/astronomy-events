@@ -13,4 +13,4 @@ const efectoMaquina = (text ='', tiempo = 200, etiqueta = '') => {
     }, tiempo)
 }
 
-efectoMaquina("La astronomia es la religion para los ateos", 100, maquina)
+efectoMaquina("La astronomia es la religion para los ateos", 50, maquina)
