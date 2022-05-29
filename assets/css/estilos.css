@@ -12,7 +12,6 @@ body {
   height: 100vh;
   /*img fixed*/
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2017-04_Circumpolar_trails_sunset_at_La_Hague_lighthouse.jpg/3200px-2017-04_Circumpolar_trails_sunset_at_La_Hague_lighthouse.jpg");
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
