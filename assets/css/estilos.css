@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  color: #e8e8e8;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 /**scroll personalizado*/
 /*?primero se accede a la barra y se le da el tamaño entre otras propiedades*/
 body::-webkit-scrollbar {
-  width: 0px;
+  width: 7px;
 }
 
 /*?despues de edita la barra que baja y sube con propiedades X*/
@@ -29,11 +30,28 @@ body::-webkit-scrollbar-thumb {
 
 /*?header (barra de navegacion)*/
 .nav {
+  position: f;
   padding: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+/* se activa el nav y cambia*/
+.nav.active {
+  background: rgba(9, 1, 48, 0.986);
+  padding: 3px;
+  z-index: 10;
+}
+
+.nav.active .logo,
+.nav.active a {
+  color: aliceblue;
+}
+
+.nav.active a:hover {
+  background: aliceblue;
+  color: black;
 }
 .logo {
   background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.vexels.com%2Fpng-svg%2Fvista-previa%2F205150%2Filustracion-de-galaxia-abstracta&psig=AOvVaw3v05r68THkmdbEvDUrMlFF&ust=1653754671445000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCODDm7CKgPgCFQAAAAAdAAAAABAqs);
@@ -41,7 +59,8 @@ body::-webkit-scrollbar-thumb {
   color: aliceblue;
 }
 .imglogo {
-  width: 60px;
+  height: 60px;
+  margin-left: 50px;
 }
 
 .menu {
@@ -50,7 +69,7 @@ body::-webkit-scrollbar-thumb {
 
 .menu li {
   list-style: none;
-  margin: 20px;
+  margin: 5px;
 }
 
 .menu li a {
@@ -89,6 +108,69 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.presentacion {
-  background-color: red;
+.presentacion h1 {
+  text-align: center;
+  padding-right: 100px;
+}
+
+/*TODO: efecto de maquina de escribir con JS*/
+#maquina_de_escribir {
+  display: inline-block;
+  font-size: 25px;
+  padding: 5px;
+  color: aliceblue;
+}
+
+/**este el espacio de cada section*/
+/*!sections*/
+#section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 550px;
+}
+
+#section-1 img {
+  height: 350px;
+  padding-left: 50px;
+}
+/*?estilo de boton*/
+#moreInfo {
+  text-decoration: none;
+  padding: 10px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: absolute;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+#moreInfo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+#moreInfo:hover {
+  color: #e8e8e8;
+}
+
+#moreInfo:hover::before {
+  width: 100%;
 }
