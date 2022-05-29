@@ -10,10 +10,13 @@
 body {
   font-family: "PT Sans", sans-serif;
   height: 100vh;
+  /*img fixed*/
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2017-04_Circumpolar_trails_sunset_at_La_Hague_lighthouse.jpg/3200px-2017-04_Circumpolar_trails_sunset_at_La_Hague_lighthouse.jpg");
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
 }
 
 /**scroll personalizado*/
@@ -40,7 +43,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* se activa el nav y cambia*/
 .nav.active {
-  background-color: rebeccapurple;
+  background-color: rgba(0, 0, 0, 0.47);
   padding: 5px;
   z-index: 10;
 }
@@ -149,7 +152,7 @@ h1 {
   font-size: 17px;
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  transition: all 250ms;
+  transition: all 550ms;
   overflow: hidden;
 }
 
@@ -174,4 +177,15 @@ h1 {
 
 #moreInfo:hover::before {
   width: 100%;
+}
+#section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  /**img de fondo para cada seccion*/
+  background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
