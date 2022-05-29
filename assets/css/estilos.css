@@ -18,7 +18,7 @@ body {
 /**scroll personalizado*/
 /*?primero se accede a la barra y se le da el tamaño entre otras propiedades*/
 body::-webkit-scrollbar {
-  width: 7px;
+  width: 0px;
 }
 
 /*?despues de edita la barra que baja y sube con propiedades X*/
@@ -68,6 +68,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1 {
+  margin: 0;
   color: aliceblue;
   font-size: 60px;
   display: flex;
@@ -87,4 +88,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.presentacion {
+  background-color: red;
 }

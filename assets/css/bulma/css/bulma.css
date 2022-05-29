@@ -1663,17 +1663,17 @@ fieldset[disabled] .button.is-success.is-inverted {
 
 .button.is-success.is-outlined {
   background-color: transparent;
-  border-color: #48c78e;
-  color: #48c78e;
+  border-color: #e6ebf7;
+  color: #8388a0;
 }
 
 .button.is-success.is-outlined:hover,
 .button.is-success.is-outlined.is-hovered,
 .button.is-success.is-outlined:focus,
 .button.is-success.is-outlined.is-focused {
-  background-color: #48c78e;
-  border-color: #48c78e;
-  color: #fff;
+  background-color: #bfbfbf;
+  border-color: #bfbfbf;
+  color: #07131b;
 }
 
 .button.is-success.is-outlined.is-loading::after {
