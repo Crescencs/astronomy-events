@@ -1,6 +1,10 @@
 body {
   display: flex;
-  background-color: #3f5943;
+  background-image: url("/assets/images/lluviaInicio.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   place-items: center;
   justify-content: center;
   height: 100vh;

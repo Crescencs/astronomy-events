@@ -27,5 +27,5 @@ const Registrar =() =>{
     let password= document.getElementById("txtPassword").value;// mando a llamar los datos
     let users = {correo, texto, password}
     listaUsuarios.unshift(users)
-    alert(listaUsuarios);
+    console.log(listaUsuarios);
 }
