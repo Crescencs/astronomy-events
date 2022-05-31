@@ -1,0 +1,143 @@
+* {
+  /*no olviadr poner padding y margin en 0*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #e8e8e8;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  height: 100vh;
+}
+.eclipse {
+  /*img fixed*/
+  background-image: url(../images/eclipseBlogInicio.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.conjuncion {
+  /*img fixed*/
+  background-image: url(../images/ConjuncionBlogInicio.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.lluviaEstrellas {
+  /*img fixed*/
+  background-image: url(../images/lluvia1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/**scroll personalizado*/
+/*?primero se accede a la barra y se le da el tamaño entre otras propiedades*/
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+/*?despues de edita la barra que baja y sube con propiedades X*/
+body::-webkit-scrollbar-thumb {
+  background: #95afc0;
+  border-radius: 5px;
+}
+
+/*?header (barra de navegacion)*/
+.nav {
+  position: fixed;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.6s ease;
+}
+/* se activa el nav y cambia*/
+.nav.active {
+  background-color: rgba(0, 0, 0, 0.47);
+  padding: 5px;
+  z-index: 10;
+}
+
+.nav.active .logo,
+.nav.active a {
+  color: aliceblue;
+}
+
+.nav.active a:hover {
+  background: aliceblue;
+  color: black;
+}
+.logo {
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.vexels.com%2Fpng-svg%2Fvista-previa%2F205150%2Filustracion-de-galaxia-abstracta&psig=AOvVaw3v05r68THkmdbEvDUrMlFF&ust=1653754671445000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCODDm7CKgPgCFQAAAAAdAAAAABAqs);
+  font-size: 25px;
+  color: aliceblue;
+}
+.imglogo {
+  height: 50px;
+  margin-left: 50px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  margin: 5px;
+  margin-right: 60px;
+}
+
+.menu li a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+  padding: 5px 10px;
+  color: black;
+  background-color: bisque;
+  border-radius: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.titulo-principal {
+  margin-top: 100px;
+  color: aliceblue;
+  font-size: 60px;
+  display: inline-block;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+h2 {
+  font-size: 25px;
+}
+.centrar-titulo {
+  text-align: center;
+}
+
+.slogan {
+  color: aliceblue;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/**edicion de tipo de formateo para la informacion*/
+.container-information {
+  align-items: center;
+  text-align: justify;
+  justify-content: center;
+  margin: 50px 100px;
+}
