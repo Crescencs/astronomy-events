@@ -141,3 +141,10 @@ h2 {
   justify-content: center;
   margin: 50px 100px;
 }
+.centrar-img {
+  text-align: center;
+}
+.container-information img {
+  align-items: center;
+  height: 300px;
+}
