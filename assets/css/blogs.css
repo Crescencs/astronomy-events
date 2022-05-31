@@ -148,3 +148,7 @@ h2 {
   align-items: center;
   height: 300px;
 }
+.img-especial {
+  width: 500px;
+  height: 150px !important;
+}
